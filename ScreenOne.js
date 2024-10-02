@@ -60,6 +60,7 @@ const ScreenOne = (props) => {
                 </View>
                 <TouchableOpacity
                     style={styles.chooseColorButton}
+                    onPress={() => navigate('ScreenTwo')}
                 >
                     <Text style={styles.chooseColorText}>4 MÀU - CHỌN MÀU</Text>
                     <Image
@@ -111,7 +112,7 @@ const styles = StyleSheet.create({
         width: 30,
     },
     reviewText: {
-        marginHorizontal: 18,
+        marginHorizontal: 20,
         fontSize: 15,
         color: 'black',
         fontWeight: '500',
